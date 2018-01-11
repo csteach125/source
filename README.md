@@ -1,2 +1,7 @@
-# source
-source code for COMP 125 - visual information processing
+### Source
+
+This repository includes source code examples developed for COMP 125.
+
+#### Contents
+* extras
+* weekly examples
