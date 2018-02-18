@@ -55,7 +55,7 @@ guessBtn.addEventListener('click', function() {
 	if (gameWord.includes(letter) === true) {
 		console.log('letter has been found...');
 
-		for (i = 0; i < gameWord.length; i++) {
+		for (i = 0; i < lettersToGuess; i++) {
 			// check letter against gameSplit array
 		  if (gameSplit[i] === letter) {
 				console.log('letter = index ' + i);
