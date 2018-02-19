@@ -26,7 +26,7 @@ console.log('game word = ' + gameWord + ' & letters left = ' + lettersToGuess);
 var answers = [];
 
 // loop through answers array - add underscore for each letter in gameWord
-for (var i = 0; i < lettersToGuess; i++) {
+for (var i = 0; i < gameWord.length; i++) {
 	answers[i] = "_";
 }
 
@@ -52,7 +52,7 @@ guessBtn.addEventListener('click', function() {
 	if (gameWord.includes(letter) === true) {
 		console.log('letter has been found...');
 
-		for (i = 0; i < lettersToGuess; i++) {
+		for (i = 0; i < gameWord.length; i++) {
 			// check letter against gameSplit array
 		  if (gameWord[i] === letter) {
 				console.log('letter = index ' + i);
