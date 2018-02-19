@@ -16,9 +16,6 @@ var gameWords = [
 // pick a random word for a new game
 var gameWord = gameWords[Math.floor(Math.random() * gameWords.length)];
 
-// split game word string into arra - split by charactery
-var gameSplit = gameWord.split("");
-
 // set value for letters to guess from random word
 var lettersToGuess = gameWord.length;
 
@@ -57,7 +54,7 @@ guessBtn.addEventListener('click', function() {
 
 		for (i = 0; i < lettersToGuess; i++) {
 			// check letter against gameSplit array
-		  if (gameSplit[i] === letter) {
+		  if (gameWord[i] === letter) {
 				console.log('letter = index ' + i);
 				// update letter in answers array
 				answers[i] = letter;
